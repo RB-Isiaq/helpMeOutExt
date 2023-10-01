@@ -25,7 +25,7 @@ let recordingInterval;
 let startTime;
 
 startRecordingBtn.addEventListener("click", async () => {
-  document.body.style.width = "1440px";
+  document.body.style.width = "900px";
   document.body.style.height = "800px";
   try {
     if (!isRecording) {
@@ -53,11 +53,6 @@ startRecordingBtn.addEventListener("click", async () => {
         }
       };
 
-      mediaRecorder.ondataavailable = (event) => {
-        if (event.data.size > 0) {
-          recordedChunks.splice(0, 1, event.data);
-        }
-      };
       startRecordingBtn.disabled = true;
       pauseRecordingBtn.disabled = false;
       stopRecordingBtn.disabled = false;
