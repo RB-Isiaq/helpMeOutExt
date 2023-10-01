@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "HelpMeOut",
+  "version": "1.0",
+  "description": "Show Them Don't Just Tell",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "desktopCapture",
+    "storage",
+    "identity",
+    "webNavigation",
+    "offscreen"
+  ],
+  "action": {
+    "default_popup": "/popup.html",
+    "default_icon": {
+      "16": "/images/logo.png",
+      "48": "/images/logo.png",
+      "128": "/images/logo.png"
+    }
+  },
+  "icons": {
+    "16": "/images/logo.png",
+    "48": "/images/logo.png",
+    "128": "/images/logo.png"
+  }
+}
