@@ -121,8 +121,8 @@ const postData = async (formData) => {
       link = link.split(".");
       link = link[0];
       // window.open(`http://localhost:3000/video/${link}`);
-      window.open(`https://help-me-out-alpha.vercel.app/video/${link}`);
-
+      // window.open(`https://help-me-out-alpha.vercel.app/video/${link}`);
+      window.location.href = `https://help-me-out-alpha.vercel.app/video/${link}`;
       console.log("Video uploaded successfully", link);
 
       popup.style.display = "flex";
